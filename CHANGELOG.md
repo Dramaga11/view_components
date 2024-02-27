@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 0.20.0
+
+### Minor Changes
+
+- [#2627](https://github.com/primer/view_components/pull/2627) [`226481e`](https://github.com/primer/view_components/commit/226481e51e8c459dcd6d2a49d57c5005a8103aff) Thanks [@camertron](https://github.com/camertron)! - Support `<select>` elements that allow selecting multiple values
+
+- [#2610](https://github.com/primer/view_components/pull/2610) [`14890a3`](https://github.com/primer/view_components/commit/14890a30c736a5a01596f0863e36d81861e6d6ac) Thanks [@thesnowrose](https://github.com/thesnowrose)! - Add the ability to show a tooltip for navlists on text truncation
+
+### Patch Changes
+
+- [#2629](https://github.com/primer/view_components/pull/2629) [`862f05a`](https://github.com/primer/view_components/commit/862f05ae7a751b87650c72616360cdbabb7504ee) Thanks [@camertron](https://github.com/camertron)! - Fix autofocus behavior for radio button and check box groups
+
+- [#2642](https://github.com/primer/view_components/pull/2642) [`7f17b7c`](https://github.com/primer/view_components/commit/7f17b7c1686cfa875ae75b58c8ff3245ea08eb24) Thanks [@tbenning](https://github.com/tbenning)! - Unify breadcrumbs
+
+- [#2643](https://github.com/primer/view_components/pull/2643) [`70a6dee`](https://github.com/primer/view_components/commit/70a6dee654562b505ac17991a53d1039c57f81e3) Thanks [@langermank](https://github.com/langermank)! - Swap bg-gradient with bg-color for Banner/Flash
+
 ## 0.19.0
 
 ### Minor Changes
