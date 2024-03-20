@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    primer_view_components (0.20.1)
+    primer_view_components (0.21.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
       octicons (>= 18.0.0)
@@ -195,7 +195,7 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.6)
     rouge (4.2.0)
-    rubocop (1.62.0)
+    rubocop (1.62.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
