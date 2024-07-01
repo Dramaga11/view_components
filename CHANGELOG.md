@@ -1,5 +1,138 @@
 # CHANGELOG
 
+## 0.27.0
+
+### Minor Changes
+
+- [#2922](https://github.com/primer/view_components/pull/2922) [`fb5917d`](https://github.com/primer/view_components/commit/fb5917dc9e6246af85a8199e6e47f73e2db3ba70) Thanks [@camertron](https://github.com/camertron)! - Change ActionMenu to accept and forward overlay arguments
+
+### Patch Changes
+
+- [#2925](https://github.com/primer/view_components/pull/2925) [`6c730c4`](https://github.com/primer/view_components/commit/6c730c4b8eeb050cf706d4843a87f2740e379a49) Thanks [@kendallgassner](https://github.com/kendallgassner)! - Update ActionList such that if role='listbox' is passed in the items render as options
+
+- [#2924](https://github.com/primer/view_components/pull/2924) [`235544d`](https://github.com/primer/view_components/commit/235544d3f0770717c16532e6f0801d6249f6a884) Thanks [@kendallgassner](https://github.com/kendallgassner)! - Add a valid selector to focus-group
+
+## 0.26.1
+
+### Patch Changes
+
+- [#2909](https://github.com/primer/view_components/pull/2909) [`e74e20a`](https://github.com/primer/view_components/commit/e74e20aa11c3531c350ebd6665cb2415b07b6f47) Thanks [@camertron](https://github.com/camertron)! - Revert tab-container-element upgrade
+
+## 0.26.0
+
+### Minor Changes
+
+- [#2884](https://github.com/primer/view_components/pull/2884) [`85f6a01`](https://github.com/primer/view_components/commit/85f6a0193e6d7e8f5f1319d7454da16e1dd191ef) Thanks [@owenniblock](https://github.com/owenniblock)! - Adds default sr-only text to spinner component
+
+- [#2855](https://github.com/primer/view_components/pull/2855) [`05159ca`](https://github.com/primer/view_components/commit/05159caa06f59bc679ce2dffcd2f7a69ff9871c8) Thanks [@keithamus](https://github.com/keithamus)! - Upgrade @github/tab-container, using shadowdom
+
+- [#2887](https://github.com/primer/view_components/pull/2887) [`5589bcf`](https://github.com/primer/view_components/commit/5589bcfb50cf580690b4d8f46eb9f3ff031544ee) Thanks [@HDinger](https://github.com/HDinger)! - Add support for `target` attribute on links of Primer::Beta::Breadcrumbs
+
+- [#2895](https://github.com/primer/view_components/pull/2895) [`bb1a15b`](https://github.com/primer/view_components/commit/bb1a15bc5109c76aee0608cdd9a087866df9424e) Thanks [@camertron](https://github.com/camertron)! - Add a leading spinner to the TextField component.
+
+### Patch Changes
+
+- [#2872](https://github.com/primer/view_components/pull/2872) [`5445f2e`](https://github.com/primer/view_components/commit/5445f2e89e20326099fbe5d44b1b16a2c5cedcc3) Thanks [@smockle](https://github.com/smockle)! - chore: Update '@github/relative-time-element' from 4.4.0 to 4.4.1
+
+- [#2885](https://github.com/primer/view_components/pull/2885) [`37727e3`](https://github.com/primer/view_components/commit/37727e34aabe6ae39450e56815d6efead3a803c4) Thanks [@camertron](https://github.com/camertron)! - Fix ActionMenu item activation by using PointerEvent instead of MouseEvent and KeyboardEvent.
+
+- [#2904](https://github.com/primer/view_components/pull/2904) [`96307bf`](https://github.com/primer/view_components/commit/96307bf3c82f1f70d21b95c5a24759fcb1d70d23) Thanks [@camertron](https://github.com/camertron)! - Fix CSS issue causing scrollbars to appear in tabs
+
+## 0.25.1
+
+### Patch Changes
+
+- [#2868](https://github.com/primer/view_components/pull/2868) [`18a0037`](https://github.com/primer/view_components/commit/18a00375a85ff6286c8245f7d6936a4a30243b8f) Thanks [@lumaxis](https://github.com/lumaxis)! - Remove non-existing argument in Banner preview
+
+- [#2869](https://github.com/primer/view_components/pull/2869) [`18d5f21`](https://github.com/primer/view_components/commit/18d5f21f9423d261244dc906aff2909f0b769e9d) Thanks [@smockle](https://github.com/smockle)! - fix: Allow breadcrumb items to wrap.
+
+## 0.25.0
+
+### Minor Changes
+
+- [#2843](https://github.com/primer/view_components/pull/2843) [`3eccd4e`](https://github.com/primer/view_components/commit/3eccd4e293658ea846fa97659c76861d4f3404ea) Thanks [@lindseywild](https://github.com/lindseywild)! - Adds live region to announce "Copied!" on ClipboardCopy component
+
+### Patch Changes
+
+- [#2840](https://github.com/primer/view_components/pull/2840) [`f9947de`](https://github.com/primer/view_components/commit/f9947de93b276ec9fa6c7873e178f3c01211ebb2) Thanks [@joelhawksley](https://github.com/joelhawksley)! - Update Rails dependency versions
+
+- [#2846](https://github.com/primer/view_components/pull/2846) [`4b8c00b`](https://github.com/primer/view_components/commit/4b8c00b76d65ad321a9d9c546151d58858571cf7) Thanks [@joelhawksley](https://github.com/joelhawksley)! - Clean up Lookbook-related security alerts.
+
+## 0.24.1
+
+### Patch Changes
+
+- [#2837](https://github.com/primer/view_components/pull/2837) [`e4d6177`](https://github.com/primer/view_components/commit/e4d6177a1d5f5ca65e71bc3a27de7fe951df4cba) Thanks [@joelhawksley](https://github.com/joelhawksley)! - Update Ruby dependencies to address upstream security notices
+
+- [#2839](https://github.com/primer/view_components/pull/2839) [`97ec908`](https://github.com/primer/view_components/commit/97ec9085788f1d5e0b59aaa0178d7b24c6dc25c6) Thanks [@camertron](https://github.com/camertron)! - Revert tab container upgrade
+
+## 0.24.0
+
+### Minor Changes
+
+- [#2624](https://github.com/primer/view_components/pull/2624) [`8600b3b`](https://github.com/primer/view_components/commit/8600b3bd96d5b425fa34e0434c5aeb3223fd66c8) Thanks [@keithamus](https://github.com/keithamus)! - Upgrade @github/tab-container, using shadowdom
+
+- [#2808](https://github.com/primer/view_components/pull/2808) [`bdb3d88`](https://github.com/primer/view_components/commit/bdb3d88595dedc93ad20e55a68d34ba1899e8fac) Thanks [@kendallgassner](https://github.com/kendallgassner)! - Adds a subtitle slot to the Primer::Alpha::Overlay::Header and Primer::Alpha::Dialog::Header
+
+- [#2804](https://github.com/primer/view_components/pull/2804) [`757635a`](https://github.com/primer/view_components/commit/757635a902c0986da60d94daa3799bd59ad1e697) Thanks [@camertron](https://github.com/camertron)! - Add a filter slot to the dialog header
+
+### Patch Changes
+
+- [#2807](https://github.com/primer/view_components/pull/2807) [`1863522`](https://github.com/primer/view_components/commit/186352212178c66b651852ab6517213869927eae) Thanks [@khiga8](https://github.com/khiga8)! - Add parenthesis to trailing counter for React parity, and to improve screen reader speech output
+
+- [#2794](https://github.com/primer/view_components/pull/2794) [`1d0ecc5`](https://github.com/primer/view_components/commit/1d0ecc5fe4cd738809fc67e9ee43cecf69b2899c) Thanks [@jonrohan](https://github.com/jonrohan)! - Fix: Re-calculate anchored-position on scroll
+
+- [#2821](https://github.com/primer/view_components/pull/2821) [`19f4d7e`](https://github.com/primer/view_components/commit/19f4d7e2068aa8c0fee5da9c15850c1afb9238cb) Thanks [@khiga8](https://github.com/khiga8)! - Add min-width
+
+- [#2803](https://github.com/primer/view_components/pull/2803) [`d81824c`](https://github.com/primer/view_components/commit/d81824c43eea2c313b3c024dfc2d4adcb5b51fd0) Thanks [@kendallgassner](https://github.com/kendallgassner)! - Adds data attribute to overlay header
+
+- [#2822](https://github.com/primer/view_components/pull/2822) [`11aa0e9`](https://github.com/primer/view_components/commit/11aa0e92034ceac4fe3b9042be31102723b85b8a) Thanks [@smockle](https://github.com/smockle)! - Fix NVDA menu item counts that are broken by using '<form>' inside an 'ActionMenu'.
+
+- [#2828](https://github.com/primer/view_components/pull/2828) [`9ca87d3`](https://github.com/primer/view_components/commit/9ca87d39e4bcff1753a116e829ea336425e161d1) Thanks [@camertron](https://github.com/camertron)! - Fix issue with ActionMenu form items which would prevent a wrapping form if form_arguments: was passed
+
+- [#2802](https://github.com/primer/view_components/pull/2802) [`2906d96`](https://github.com/primer/view_components/commit/2906d96e0780dd5795800cfd29ede076c1e4bcd5) Thanks [@lindseywild](https://github.com/lindseywild)! - Updates Button and ButtonMarketing docs with markup requirements
+
+## 0.23.0
+
+### Minor Changes
+
+- [#2764](https://github.com/primer/view_components/pull/2764) [`a58824e`](https://github.com/primer/view_components/commit/a58824e10255901bcf394edcc5873db1ed21e0d6) Thanks [@langermank](https://github.com/langermank)! - - Upgrade `primer/primitives`
+  - Remove CSS color variable fallbacks
+
+### Patch Changes
+
+- [#2751](https://github.com/primer/view_components/pull/2751) [`b1fef3c`](https://github.com/primer/view_components/commit/b1fef3cf8ae547241b4d63fde81bc6c127fbd862) Thanks [@langermank](https://github.com/langermank)! - - Add `label_wrap` param to `Beta::Button`
+
+  - Bug fix: text overflows in SegmentedControl instead of ellipses
+
+- [#2765](https://github.com/primer/view_components/pull/2765) [`1857983`](https://github.com/primer/view_components/commit/1857983591752336d34133c83af3c8cfe232f1af) Thanks [@camertron](https://github.com/camertron)! - Fix issue preventing expansion and collapse of nav list items with tooltips
+
+- [#2750](https://github.com/primer/view_components/pull/2750) [`ba87524`](https://github.com/primer/view_components/commit/ba8752440b909b57643b91b9e25c7e91a15bcd60) Thanks [@langermank](https://github.com/langermank)! - Allow `:link` Button scheme text label to wrap
+
+## 0.22.0
+
+### Minor Changes
+
+- [#2729](https://github.com/primer/view_components/pull/2729) [`2b0a7bf`](https://github.com/primer/view_components/commit/2b0a7bf7d82a837156df3794fe25bef435c66147) Thanks [@thesnowrose](https://github.com/thesnowrose)! - Fixes a bug where a tooltip was being shown in the navlist even when the text wasn't truncated for certain items.
+
+- [#2651](https://github.com/primer/view_components/pull/2651) [`e1f3434`](https://github.com/primer/view_components/commit/e1f34344d237505fb3cbe2a4d0b68300f244752c) Thanks [@jonrohan](https://github.com/jonrohan)! - Add a slot to `Overlay::Header` called `filter` for a filter input.
+
+### Patch Changes
+
+- [#2735](https://github.com/primer/view_components/pull/2735) [`507a743`](https://github.com/primer/view_components/commit/507a743a7e4e018330765cd1273344bb55829bb6) Thanks [@antn](https://github.com/antn)! - Explicitly convert params to integers where needed for several previews
+
+- [#2731](https://github.com/primer/view_components/pull/2731) [`8123aee`](https://github.com/primer/view_components/commit/8123aeeb616f0ed34c96f9517666a28031c948ac) Thanks [@jonrohan](https://github.com/jonrohan)! - Remove old primitives color themes imports and only use V8 on the demo lookbook
+
+- [#2733](https://github.com/primer/view_components/pull/2733) [`6fe410b`](https://github.com/primer/view_components/commit/6fe410b1a306ecc5a43507de9b0fb9bea76abb26) Thanks [@broccolinisoup](https://github.com/broccolinisoup)! - Tooltip: Update the threshold value to match with the offset
+
+## 0.21.1
+
+### Patch Changes
+
+- [#2707](https://github.com/primer/view_components/pull/2707) [`1c73539`](https://github.com/primer/view_components/commit/1c7353976a09b8722dd0609ff3239ed02799a5ff) Thanks [@jonrohan](https://github.com/jonrohan)! - Add `:primary` and `:secondary` scheme to IconButton and Match scheme for ButtonGroup menu
+
+- [#2582](https://github.com/primer/view_components/pull/2582) [`74c4cc0`](https://github.com/primer/view_components/commit/74c4cc037fede70f8859614d7efab8934eeb80e7) Thanks [@keithamus](https://github.com/keithamus)! - Ensure Alpha::Dialog is always opened as modal
+
 ## 0.21.0
 
 ### Minor Changes

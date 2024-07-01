@@ -105,6 +105,12 @@
         "description": "How items may be selected in the list. One of `:multiple`, `:multiple_checkbox`, `:none`, or `:single`."
       },
       {
+        "name": "aria_selection_variant",
+        "type": "Symbol",
+        "default": "`:checked`",
+        "description": "Specifies which aria selection to use. <%= one_of(Primer::Alpha::ActionList::ARIA_SELECTION_VARIANT_OPTIONS) %?"
+      },
+      {
         "name": "form_arguments",
         "type": "Hash",
         "default": "`{}`",
@@ -384,6 +390,12 @@
         "description": "Allows an `ActionMenu` to act as a select list in multi- and single-select modes. Pass the `builder:` and `name:` options to this hash. `builder:` should be an instance of `ActionView::Helpers::FormBuilder`, which are created by the standard Rails `#form_with` and `#form_for` helpers. The `name:` option is the desired name of the field that will be included in the params sent to the server on form submission."
       },
       {
+        "name": "overlay_arguments",
+        "type": "Hash",
+        "default": "`{}`",
+        "description": "Arguments to pass to the underlying [Overlay](/components/alpha/overlay)"
+      },
+      {
         "name": "system_arguments",
         "type": "Hash",
         "default": "N/A",
@@ -434,6 +446,12 @@
         "type": "Symbol",
         "default": "`:none`",
         "description": "How items may be selected in the list. One of `:multiple`, `:multiple_checkbox`, `:none`, or `:single`."
+      },
+      {
+        "name": "aria_selection_variant",
+        "type": "Symbol",
+        "default": "`:checked`",
+        "description": "Specifies which aria selection to use. <%= one_of(Primer::Alpha::ActionList::ARIA_SELECTION_VARIANT_OPTIONS) %?"
       },
       {
         "name": "form_arguments",
@@ -2765,6 +2783,12 @@
         "description": "Renders a leading visual icon before the text field's cursor. The hash will be passed to Primer's [Octicon](/components/beta/octicon) component."
       },
       {
+        "name": "leading_spinner",
+        "type": "Boolean",
+        "default": "N/A",
+        "description": "If `true`, a leading spinner will be included in the markup. The spinner can be shown via the `showLeadingSpinner()` JavaScript method, and hidden via `hideLeadingSpinner()`. If this argument is `true`, a leading visual must also be provided."
+      },
+      {
         "name": "show_clear_button",
         "type": "Boolean",
         "default": "N/A",
@@ -3399,6 +3423,12 @@
         "type": "Boolean",
         "default": "`false`",
         "description": "Whether or not the button is disabled. If true, this option forces `tag:` to `:button`."
+      },
+      {
+        "name": "label_wrap",
+        "type": "Boolean",
+        "default": "`false`",
+        "description": "Whether or not the button label text wraps and the button height expands."
       },
       {
         "name": "system_arguments",
@@ -4247,6 +4277,12 @@
         "type": "string",
         "default": "`nil`",
         "description": "Provide a custom title to the element."
+      },
+      {
+        "name": "no_title",
+        "type": "Boolean",
+        "default": "`false`",
+        "description": "Removes the `title` attribute provided on the element by default."
       },
       {
         "name": "system_arguments",

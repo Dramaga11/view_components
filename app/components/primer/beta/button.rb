@@ -3,6 +3,11 @@
 module Primer
   module Beta
     # Use `Button` for actions (e.g. in forms). Use links for destinations, or moving from one page to another.
+    # @accessibility
+    #   Additional markup is required if setting the `tag` argument to either `:a` or `:summary`.
+    #
+    #   * `:a` requires you to pass in an `href` attribute
+    #   * `:summary` requires you to wrap the component in a `<details>` element
     class Button < Primer::Component
       status :beta
 
@@ -63,7 +68,10 @@ module Primer
       renders_one :trailing_visual, types: {
         icon: Primer::Beta::Octicon,
         label: Primer::Beta::Label,
-        counter: Primer::Beta::Counter
+        counter: lambda { |**system_arguments|
+          @trailing_visual_counter = true
+          Primer::Beta::Counter.new("aria-hidden": true, **system_arguments)
+        }
       }
 
       # Trailing action appears to the right of the trailing visual.
@@ -101,6 +109,7 @@ module Primer
       # @param tag [Symbol] (Primer::Beta::BaseButton::DEFAULT_TAG) <%= one_of(Primer::Beta::BaseButton::TAG_OPTIONS) %>
       # @param type [Symbol] (Primer::Beta::BaseButton::DEFAULT_TYPE) <%= one_of(Primer::Beta::BaseButton::TYPE_OPTIONS) %>
       # @param disabled [Boolean] Whether or not the button is disabled. If true, this option forces `tag:` to `:button`.
+      # @param label_wrap [Boolean] Whether or not the button label text wraps and the button height expands.
       # @param system_arguments [Hash] <%= link_to_system_arguments_docs %>
       def initialize(
         base_button_class: Primer::Beta::BaseButton,
@@ -109,11 +118,13 @@ module Primer
         block: false,
         align_content: DEFAULT_ALIGN_CONTENT,
         disabled: false,
+        label_wrap: false,
         **system_arguments
       )
         @base_button_class = base_button_class
         @scheme = scheme
         @block = block
+        @label_wrap = label_wrap
 
         @system_arguments = system_arguments
         @system_arguments[:disabled] = disabled
@@ -133,7 +144,8 @@ module Primer
           SCHEME_MAPPINGS[fetch_or_fallback(SCHEME_OPTIONS, scheme, DEFAULT_SCHEME)],
           SIZE_MAPPINGS[fetch_or_fallback(SIZE_OPTIONS, size, DEFAULT_SIZE)],
           "Button",
-          "Button--fullWidth" => @block
+          "Button--fullWidth" => @block,
+          "Button--labelWrap" => @label_wrap
         )
       end
 

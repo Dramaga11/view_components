@@ -189,6 +189,21 @@ module Primer
 
         assert @rendered_content.scan("test").size == 1, "The show button rendered its content more than once"
       end
+
+      def test_single_select_form_items_have_role_none
+        render_preview(:single_select_form_items)
+
+        # one form per item
+        assert_selector "form[role=none]", count: 2
+      end
+
+      def test_forwards_overlay_arguments
+        render_inline(Primer::Alpha::ActionMenu.new(menu_id: "foo", overlay_arguments: { data: { foo: "bar" } })) do |menu|
+          menu.with_item { "foo" }
+        end
+
+        assert_selector "anchored-position[data-foo=bar]"
+      end
     end
   end
 end
